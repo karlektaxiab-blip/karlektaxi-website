@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kärlek Taxi AB – Trygga resor i hela Sverige</title>
+  <meta name="description" content="Kärlek Taxi AB – Trygga, punktliga och prisvärda resor. Boka enkelt via telefon eller e-post." />
+  <meta property="og:title" content="Kärlek Taxi AB" />
+  <meta property="og:description" content="Trygga, punktliga och prisvärda resor. Boka enkelt via telefon eller e-post." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#151515;
+      --gold:#c6a254;
+      --muted:#bfbfbf;
+      --white:#ffffff;
+      --max:1050px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--white);font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;}
+    a{color:inherit;text-decoration:none}
+    header{max-width:var(--max);margin:auto;padding:22px 18px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(145deg,#141414,#0a0a0a);display:grid;place-items:center;border:1px solid #222;}
+    .logo svg{width:34px;height:34px;stroke:var(--gold);fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    .title{font-weight:700;letter-spacing:.06em}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:10px 14px;border:1px solid #262626;border-radius:12px;background:#121212}
+    nav a:hover{border-color:#3a3a3a}
+
+    .hero{max-width:var(--max);margin:10px auto 26px;padding:12px 18px}
+    .panel{background:linear-gradient(180deg,#121212,#0e0e0e);border:1px solid #222;border-radius:22px;padding:28px}
+    .hero h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px);letter-spacing:.02em}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:14px;border:1px solid #2a2a2a;background:#151515}
+    .btn--gold{background:var(--gold);color:#111;border-color:#b18e45;font-weight:700}
+    .grid{display:grid;gap:16px;margin-top:20px}
+    @media(min-width:860px){.grid{grid-template-columns:1.2fr .8fr}}
+
+    .card{background:var(--card);border:1px solid #202020;border-radius:18px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:20px}
+    .list{margin:10px 0 0;padding:0 0 0 18px;color:var(--muted)}
+    footer{max-width:var(--max);margin:32px auto 60px;padding:0 18px;color:var(--muted);display:grid;gap:8px}
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:#1e1e1e;margin:14px 0}
+    .lang{margin-top:6px;font-size:14px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M18 24c0-7 5-12 12-12s12 5 12 12c0 14-24 26-24 26S-6 38 6 24c0-7 5-12 12-12" />
+        </svg>
+      </div>
+      <div>
+        <div class="title">KÄRLEK TAXI AB</div>
+        <div class="lang">Trygga resor • Pålitlig service</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#book">Boka</a>
+      <a href="#services">Tjänster</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="panel">
+      <h1>Din pålitliga taxi-partner i Sverige</h1>
+      <p>Snabba, trygga och prisvärda resor för privatpersoner och företag.
+        Tillgängliga dygnet runt med fokus på service och punktlighet.</p>
+      <div class="cta">
+        <a class="btn btn--gold" href="tel:+46-000-000-000">Ring oss</a>
+        <a class="btn" href="mailto:booking@karlektaxi.se?subject=Bokning">Boka via e-post</a>
+        <a class="btn" href="#contact">Kontakta oss</a>
+      </div>
+      <div class="grid">
+        <div class="card" id="services">
+          <h3>Tjänster</h3>
+          <ul class="list">
+            <li>Stadskörning & flygplatstransfer</li>
+            <li>Företagsavtal & fakturering</li>
+            <li>Förbokade resor & långtidskörningar</li>
+            <li>Särskilda behov – kontakta oss så anpassar vi</li>
+          </ul>
+        </div>
+        <div class="card" id="book">
+          <h3>Boka nu</h3>
+          <p class="muted">Snabbaste sättet är att ringa eller skicka ett mejl:</p>
+          <p>
+            📞 <a href="tel:+46-000-000-000">+46 (0)00 000 00 00</a><br>
+            ✉️ <a href="mailto:booking@karlektaxi.se">booking@karlektaxi.se</a>
+          </p>
+          <div class="divider"></div>
+          <p class="muted" style="font-size:14px">
+            <strong>Öppet:</strong> 24/7 &nbsp;•&nbsp; <strong>Område:</strong> Hela Sverige
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <div><strong>Kontakt</strong></div>
+    <div>Info: <a href="mailto:info@karlektaxi.se">info@karlektaxi.se</a></div>
+    <div>Support: <a href="mailto:support@karlektaxi.se">support@karlektaxi.se</a></div>
+    <div>Bokning: <a href="mailto:booking@karlektaxi.se">booking@karlektaxi.se</a></div>
+    <div class="divider"></div>
+    <div>
+      VD: Mohammed M. — <a href="mailto:mohammed.mtbebl@karlektaxi.se">mohammed.mtbebl@karlektaxi.se</a><br>
+      Verkställande direktör: Abdolmalik Rajih — <a href="mailto:abdolmalik.rajih@karlektaxi.se">abdolmalik.rajih@karlektaxi.se</a>
+    </div>
+    <div class="divider"></div>
+    <div class="muted">© <span id="y"></span> Kärlek Taxi AB. Alla rättigheter förbehållna.</div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
